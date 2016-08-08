@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  color: #333;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 5% auto;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  height: 10em;
+  padding: 1em;
+  margin-bottom: 2em;
+  border: 1px dashed #aaa;
+}
+
+.input:focus {
+  border-width: 2px;
+  outline: none;
+}
+
+.button {
+  display: block;
+  width: 30%;
+  min-width: 135px;
+  min-height: 20px;
+  margin: 0 auto;
+  padding: 1% 0;
+  color: #fff;
+  background: #dc2e18;
+  border: none;
+  box-shadow: 2px -2px 1px #671004;
+  transition: all ease-in .2s;
+}
+
+.button:hover, .button:focus {
+  background: #f7361d;
+}
+
+.button:focus, .button:active {
+  outline: none;
+  transform: scale(0.9);
+}
+
+.output-container {
+  transform: translate3d(-99em, 0, 0);
+  transition: all ease-out .5s;
+}
+
+.schweigrized .output-container {
+  transform: translate3d(0, 0, 0);
+}
+
+.output {
+  position: relative;
+  padding: 1em;
+  margin: 1em 0 0.5em;
+  background: #eee;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.output:after {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 50px;
+  border: 1em solid transparent;
+  border-bottom-color: #eee;
+  display: block;
+  width: 0;
+}
