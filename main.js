@@ -38,7 +38,7 @@
         var replacement = Array(random(2,6) + 1).join('.');;
       }
       return replacement
-    });
+    }).replace(/\?/g, function() { return Array(random(3,8) + 1).join('?') });
   };
 
   var improveSpelling = function (string) {
